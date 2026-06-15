@@ -3,22 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Spark Lab</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #c00000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #900000;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar > li {
+            position: relative;
+        }
+
+        .navbar > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+
+        .navbar > li:hover {
+            background-color: #700000;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            list-style: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .dropdown li a {
+            display: block;
+            padding: 12px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .dropdown li a:hover {
+            background-color: #eeeeee;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Spark Lab</h1>
     </header>
 
+    <nav>
+        <ul class="navbar">
+
+            <li>
+                <a href="#">Research ▼</a>
+                <ul class="dropdown">
+                    <li><a href="research-projects.html">Projects</a></li>
+                    <li><a href="research-publications.html">Publications</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Team ▼</a>
+                <ul class="dropdown">
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Resources ▼</a>
+                <ul class="dropdown">
+                    <li><a href="equipment.html">Equipment</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Contact ▼</a>
+                <ul class="dropdown">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
     <main>
-        <h2>Homepage</h2>
-        <p>This is the main page of my GitHub Pages website.</p>
+        <h2>Welcome to Spark Lab</h2>
+        <p>Research, innovation, and discovery.</p>
     </main>
 
 </body>
