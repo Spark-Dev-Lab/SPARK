@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SparkLab</title>
+
+    <link rel="stylesheet" href="/SPARK/assets/css/style.css">
+</head>
+<body>
+
+<!-- HEADER LOAD -->
+<div id="header"></div>
+
+<script>
+fetch('/SPARK/_includes/header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<!-- PAGE CONTENT -->
+<div class="content">
+    <h1>Welcome</h1>
+    <p>This is your homepage.</p>
+</div>
+
+</body>
+</html>
