@@ -1,138 +1,151 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spark Lab</title>
+    <title>SparkLab</title>
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
 
         body {
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: white;
         }
 
         /* Header */
-        header {
-            background-color: #c00000;
+        .header {
+            background-color: #cc0000;
             color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #dfa3f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: #dfa3f5;
+            color: black;
+            padding: 16px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dropbtn:hover {
+            background-color: #c87be9;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Content Area */
+        .content {
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 20px;
             text-align: center;
         }
 
-        /* Navigation Bar */
-        nav {
-            background-color: #900000;
+        .content h1 {
+            margin-bottom: 20px;
         }
 
-        .navbar {
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar > li {
-            position: relative;
-        }
-
-        .navbar > li > a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 15px 25px;
-        }
-
-        .navbar > li:hover {
-            background-color: #700000;
-        }
-
-        /* Dropdown Menu */
-        .dropdown {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 200px;
-            list-style: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        .dropdown li a {
-            display: block;
-            padding: 12px;
-            color: black;
-            text-decoration: none;
-        }
-
-        .dropdown li a:hover {
-            background-color: #eeeeee;
-        }
-
-        .navbar li:hover .dropdown {
-            display: block;
-        }
-
-        main {
-            padding: 40px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 15px;
+        .content p {
+            color: #555;
+            line-height: 1.6;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Spark Lab</h1>
-    </header>
+    <div class="header">
+        SparkLab
+    </div>
 
-    <nav>
-        <ul class="navbar">
+    <div class="navbar">
 
-            <li>
-                <a href="#">Research ▼</a>
-                <ul class="dropdown">
-                    <li><a href="research-projects.html">Projects</a></li>
-                    <li><a href="research-publications.html">Publications</a></li>
-                </ul>
-            </li>
+        <button class="dropbtn" onclick="location.href='index.html'">
+            Home
+        </button>
 
-            <li>
-                <a href="#">Team ▼</a>
-                <ul class="dropdown">
-                    <li><a href="faculty.html">Faculty</a></li>
-                    <li><a href="students.html">Students</a></li>
-                </ul>
-            </li>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="team.html">Our Team</a>
+                <a href="research.html">Research</a>
+            </div>
+        </div>
 
-            <li>
-                <a href="#">Resources ▼</a>
-                <ul class="dropdown">
-                    <li><a href="equipment.html">Equipment</a></li>
-                    <li><a href="downloads.html">Downloads</a></li>
-                </ul>
-            </li>
+        <div class="dropdown">
+            <button class="dropbtn">For Parents</button>
+            <div class="dropdown-content">
+                <a href="Participate.html">Participate</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+        </div>
 
-            <li>
-                <a href="#">Contact ▼</a>
-                <ul class="dropdown">
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="location.html">Location</a></li>
-                </ul>
-            </li>
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Newsletter.html">Newsletter</a>
+                <a href="Activities.html">Activities</a>
+                <a href="Partners.html">Our Partners</a>
+            </div>
+        </div>
 
-        </ul>
-    </nav>
+    </div>
 
-    <main>
-        <h2>Welcome to Spark Lab</h2>
-        <p>Research, innovation, and discovery.</p>
-    </main>
+    <div class="content">
+        <h1>Welcome to SparkLab</h1>
+
+        <p>
+            Replace this text with information about your lab, research,
+            upcoming studies, and opportunities for families to participate.
+        </p>
+    </div>
 
 </body>
 </html>
+```
