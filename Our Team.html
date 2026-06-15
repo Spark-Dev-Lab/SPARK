@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spark Lab</title>
+    <title>SparkLab</title>
 
     <style>
         * {
@@ -13,7 +14,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            background-color: white;
         }
 
         /* Header */
@@ -26,11 +27,12 @@
             font-weight: bold;
         }
 
-        /* Navigation */
+        /* Navigation Bar */
         .navbar {
             background-color: #dfa3f5;
             display: flex;
             justify-content: center;
+            align-items: center;
             border-bottom: 1px solid #ddd;
         }
 
@@ -48,7 +50,7 @@
         }
 
         .dropbtn:hover {
-            background-color: #dfa3f5;
+            background-color: #c87be9;
         }
 
         .dropdown-content {
@@ -57,7 +59,7 @@
             background-color: white;
             min-width: 180px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 1;
+            z-index: 1000;
         }
 
         .dropdown-content a {
@@ -75,7 +77,7 @@
             display: block;
         }
 
-        /* Main content */
+        /* Content Area */
         .content {
             max-width: 1000px;
             margin: 50px auto;
@@ -93,13 +95,16 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="header">
         SparkLab
     </div>
-  <div class="navbar">
-   <button class="dropbtn" onclick="location.href='index.html'">
+
+    <div class="navbar">
+
+        <button class="dropbtn" onclick="location.href='index.html'">
             Home
         </button>
 
@@ -128,15 +133,3 @@
                 <a href="Partners.html">Our Partners</a>
             </div>
         </div>
-   
-<html>
-<head>
-    <title>Our Team</title>
-</head>
-<body>
-    <div class="center-container">  <h1>Our Team</h1>
-</div>
-    <p>Our team of dedicated undergraduate research students who are epic and cool :)</p>
-
-</body>
-</html>
