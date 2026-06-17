@@ -10,6 +10,16 @@ body {
     background-color: white;
 }
 
+
+/* Logo Constraints */
+.header-logo {
+    max-width: 300px;   /* caps the size on large screens */
+    width: 100%;        /* scales down automatically */
+    height: auto;       /* keeps aspect ratio perfect */
+    display: block;
+    margin: 0 auto;     /* centers it */
+}
+
 /* Header */
 .header {
     background-color: #B24E50;
