@@ -55,14 +55,14 @@ body {
 }
 
 .dropbtn:hover {
-    background-color: #c87be9;
+    background-color: #f4d177;
 }
 
 /* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #e4dce5;
     min-width: 180px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 1000;
@@ -76,7 +76,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f4d177;
 }
 
 /* Show dropdown on hover */
