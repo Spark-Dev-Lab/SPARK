@@ -157,7 +157,7 @@ body {
 
 .team-member {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: flex-start;
     margin-top: 40px;
     text-align: left;
@@ -165,7 +165,7 @@ body {
 }
 
 .member-photo img {
-    width: 500px;
+    width: 550px;
     height: auto;
     border-radius: 10px;
 }
