@@ -14,3 +14,119 @@
 
     <!-- Shared header include -->
     <div id="header"></div>
+
+    <!-- Page content -->
+    <div class="content publications">
+
+        <h1>Publications</h1>
+
+        <p class="pub-note">
+            Publications by members of SparkLab. * indicates undergraduate co-authors.
+        </p>
+
+        <h2>2023</h2>
+
+        <ul class="pub-list">
+            <li>
+                Beckner, A.G., Simpson, M., Tompkins, D., Voss, A.T., Winebrake, D.,
+                LoBue, V., Oakes, L.M., Casasola, M. (2023).
+                <span class="pub-title">
+                    A novel approach to assessing infant and child mental rotation.
+                </span>
+                Journal of Intelligence, 11(8), 168.
+            </li>
+
+            <li>
+                Beckner, A.G., Arnold, C.D., Bragg, M.G., Casswell, B.L., *Chen, Z.,
+                Cox, K., DeBolt, M.C., George, M., Maleta, K., Stewart, C.,
+                Oakes, L.M., Prado, E.L. (2023).
+                <span class="pub-title">
+                    Examining similarities and differences in infants’ visual paired
+                    comparison performance in the US and rural Malawi.
+                </span>
+                Developmental Science, e13439.
+            </li>
+
+            <li>
+                Beckner, A.G., Voss, A.T., *King, K., *Phillips, L., Casasola, M.,
+                Oakes, L.M. (2023).
+                <span class="pub-title">
+                    An investigation of infant mental rotation using change detection.
+                </span>
+                Infant Behavior and Development, 71, 101834.
+            </li>
+        </ul>
+
+        <h2>2022</h2>
+
+        <ul class="pub-list">
+            <li>
+                Kiat, J.E., Luck, S.J., Beckner, A.G., Hayes, T.R., Pomaranski, K.I.,
+                Henderson, J.M., Oakes, L.M. (2022).
+                <span class="pub-title">
+                    Linking patterns of infant eye movements to a neural network model
+                    of the ventral stream using representational similarity analysis.
+                </span>
+                Developmental Science, 25(1), e13155.
+            </li>
+
+            <li>
+                Bragg, M.G., Prado, E.L., Caswell, B.L., Arnold, C.D., George, M.,
+                Oakes, L.M., Beckner, A.G., DeBolt, M.C., Bennett, B.J., Maleta, K.M.,
+                Stewart, C.P. (2022).
+                <span class="pub-title">
+                    The association between plasma choline, growth, and neurodevelopment
+                    among Malawian children age 6–15 months enrolled in an egg
+                    intervention trial.
+                </span>
+                Maternal and Child Nutrition, e13471.
+            </li>
+        </ul>
+
+        <h2>2021</h2>
+
+        <ul class="pub-list">
+            <li>
+                Oakes, L.M., DeBolt, M.C., Beckner, A.G., Voss, A.T., Cantrell, L.M.
+                (2021).
+                <span class="pub-title">
+                    Infant eye gaze while viewing dynamic faces.
+                </span>
+                Brain Sciences, 11(231), 1–37.
+            </li>
+
+            <li>
+                Bambha, V., Beckner, A.G., *Shetty, N., Voss, A., *Xie, J., *Yiu, E.,
+                LoBue, V., Oakes, L.M., Casasola, M. (2021).
+                <span class="pub-title">
+                    Developmental changes in children's object insertions during play.
+                </span>
+                Journal of Cognitive Development, 23(3), 340–359.
+            </li>
+        </ul>
+
+        <h2>2020</h2>
+
+        <ul class="pub-list">
+            <li>
+                Beckner, A.G., Cantrell, L., DeBolt, M.D., *Martinez, M.,
+                Oakes, L.M., &amp; Luck, S.J. (2020).
+                <span class="pub-title">
+                    The development of visual short-term memory for overtly attended
+                    objects during infancy.
+                </span>
+                Infancy, 25(3), 347–370.
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Load shared header -->
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("header").innerHTML = html;
+            });
+    </script>
+</body>
