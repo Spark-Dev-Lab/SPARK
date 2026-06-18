@@ -143,3 +143,12 @@ body {
                 margin-bottom: 18px;
             }
         }
+
+
+/* for Map on contact page */        
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
