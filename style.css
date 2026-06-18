@@ -1,3 +1,4 @@
+```css
 /* Global Reset & Body */
 * {
     margin: 0;
@@ -102,53 +103,127 @@ body {
 }
 
 /* Publication page (TEMP?) */
- .publications {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: left;
-        }
-
-        .publications h1,
-        .publications h2 {
-            text-align: center;
-        }
-
-        .pub-note {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .pub-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin-bottom: 30px;
-        }
-
-        .pub-list li {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .pub-title {
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            .publications {
-                padding: 15px;
-            }
-
-            .pub-list li {
-                margin-bottom: 18px;
-            }
-        }
-
-
-/* for Map on contact page */        
-.map-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+.publications {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
 }
+
+.publications h1,
+.publications h2 {
+    text-align: center;
+}
+
+.pub-note {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pub-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.pub-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.pub-title {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .publications {
+        padding: 15px;
+    }
+
+    .pub-list li {
+        margin-bottom: 18px;
+    }
+}
+
+/* for Map on contact page */
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Team Page */
+
+.team-member {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.member-photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.member-info h2 {
+    margin-bottom: 10px;
+}
+
+.member-info span {
+    font-weight: normal;
+    color: #666;
+}
+
+.position {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.degree {
+    margin-bottom: 15px;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.member-info p {
+    margin-bottom: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .member-info {
+        text-align: left;
+    }
+
+    .member-photo img {
+        width: 250px;
+    }
+}
+```
