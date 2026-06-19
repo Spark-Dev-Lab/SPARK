@@ -12,7 +12,26 @@
        
     </style>
 </head>
-    <h1> FAQ </h1>
+    
+<body>
+
+    <!-- Shared header include -->
+    <div id="header"></div>
+
+
+    <!-- Load shared header -->
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("header").innerHTML = html;
+            });
+    </script>
+    
+
+</body>
+</html>
+<h1> FAQ </h1>
 <p> Who can participate?
 What do we do with our research findings?
 How can I get my child involved in studies?
@@ -33,21 +52,4 @@ Are there any benefits to participating?
 How did you get my contact information?
 Will I receive a copy of the results and/or publication when the study is completed? 
 </p>
-<body>
-
-    <!-- Shared header include -->
-    <div id="header"></div>
-
-
-    <!-- Load shared header -->
-    <script>
-        fetch("header.html")
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("header").innerHTML = html;
-            });
-    </script>
-
-</body>
-</html>
 ```
