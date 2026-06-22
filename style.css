@@ -15,7 +15,7 @@ body {
 
 /* Logo Constraints */
 .header-logo {
-    max-width: 800px;   /* caps the size on large screens */
+    max-width: 900px;   /* caps the size on large screens */
     width: 100%;        /* scales down automatically */
     height: auto;       /* keeps aspect ratio perfect */
     display: block;
