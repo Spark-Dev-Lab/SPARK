@@ -339,3 +339,34 @@ body {
         width: 250px;
     }
 }
+
+/* MOBILE FIXES - checks resolution of screen and adjusts header*/
+@media (max-width: 768px) {
+
+    /* Header area */
+    .header {
+        padding: 15px;
+    }
+
+    .header-logo {
+        max-width: 300px;   /* smaller logo on phones */
+    }
+
+    /* Navbar layout */
+    .navbar {
+        flex-wrap: wrap;    /* allows items to wrap instead of overflowing */
+        padding: 0;
+    }
+
+    /* Buttons */
+    .dropbtn {
+        font-size: 16px;     /* smaller text */
+        padding: 10px 14px;  /* smaller buttons */
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+        min-width: 140px;
+    }
+}
+
