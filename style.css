@@ -368,5 +368,11 @@ body {
     .dropdown-content {
         min-width: 140px;
     }
+
+    /* Images */
+    img {
+    max-width: 100%;
+    height: auto;
+    }
 }
 
