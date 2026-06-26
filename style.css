@@ -375,18 +375,11 @@ body {
     height: auto;
     }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #002147;
-  color: white;
-  text-align: center;
-}
 
-<div class="footer">
-  <p>Footer</p>
-</div>
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+footer {
+    margin-top: auto; }
