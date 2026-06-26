@@ -374,13 +374,19 @@ body {
     max-width: 100%;
     height: auto;
     }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #002147;
+  color: white;
+  text-align: center;
 }
-. footer {
-    background-color: #002147;
-    color: black;
-    text-align: center;
-    padding: 30px;
-    font-size: 2.5rem;
-    font-weight: bold;
+
+<div class="footer">
+  <p>Footer</p>
+</div>
 }
 
