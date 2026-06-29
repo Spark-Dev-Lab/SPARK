@@ -5,12 +5,18 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('assets/common/BricolageGrotesque.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Alice';
+    font-family: 'Bricolage Grotesque', sans-serif;
     color: black;
     background-color: white;
 }
-
 
 /* Logo Constraints */
 .header-logo {
