@@ -147,16 +147,19 @@
     };
     </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <!-- Footer include -->
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("footer").innerHTML = html;
+                });
+        </script>
+
 </body>
 
-<!-- Footer include -->
-    <div id="footer"></div>
-    <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("footer").innerHTML = html;
-            });
-    </script>
+
 
 
