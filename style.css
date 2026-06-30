@@ -390,10 +390,21 @@ html {
 body {
     margin: 0 0 100px; /* bottom = footer height */
 }
-#bottom-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%; }
+body {
+  position: relative;
+}
+
+#main {
+  margin-bottom: 350px; /* is equal to the footer height - change it as you need, in both common and your mobile tab*/
+}
+
+#sticky-footer {
+  padding: 50px 0;
+  background: var(--header_background);  /* optional */
+  color: var(--primary-medium); /* optional */
+  text-align: center; /* optional */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
