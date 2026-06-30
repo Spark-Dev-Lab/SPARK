@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPARKLab</title>
     <link rel="icon" type="image/png" href="assets/header/favicon.png">
-    <!-- Shared global stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,7 +20,11 @@
         <h1>Welcome to SPARK Lab!</h1>
 
         <p class="intro-line">
-            Welcome to the Science of Perception, Attention, & Representation in Kids (SPARK) Lab! The SPARK Lab is housed in the <a href="https://www.oberlin.edu/arts-and-sciences/departments/psychology" target="_blank" rel="noopener noreferrer">Department of Psychology</a> at Oberlin College.
+            Welcome to the Science of Perception, Attention, & Representation in Kids (SPARK) Lab! The SPARK Lab is housed in the 
+            <a href="https://www.oberlin.edu/arts-and-sciences/departments/psychology" target="_blank" rel="noopener noreferrer">
+                Department of Psychology
+            </a> 
+            at Oberlin College.
         </p>
 
         <div class="text-with-right-image">
@@ -31,36 +32,40 @@
             <p>Here at the SPARK Lab, we’re interested in understanding how children transform everyday experiences into learning opportunities. Our primary research interests center on young children’s attention, memory, spatial skills, and the ways these abilities are shaped by caregiving and families’ lived experiences.</p>
         </div>
         
- 
-        <!-- the bar should go here -->
-  <div class="feature-bar">
+        <!-- Feature bar -->
+        <div class="feature-bar">
             <img src="assets/Babyhomepage1.svg" class="feature-side-image" alt="Baby 1">
             <span class="feature-bar-text">Whats so important about play?</span>
-            <img src="assets/Babyhomepage3.svg" class="feature-side-image" alt="Baby 1">
+            <img src="assets/Babyhomepage3.svg" class="feature-side-image" alt="Baby 3">
         </div>
     
         <p class="main-paragraph">
             Early childhood is a period of remarkable growth, learning, and discovery. Children play an active role in their own development through exploration, play, and interactions with people and their environment. During these everyday experiences, children attend to information, build memories, and construct knowledge about the world around them. Opportunities for learning are embedded within families, communities, and broader environments, which shape children’s everyday experiences. Differences in these experiences shape the opportunities children have to practice and develop cognitive skills through play, exploration, and social interaction. These everyday experiences and the cognitive skills children build and learn through them are critical for school readiness and future academic achievement. Understanding how children’s everyday experiences shape the development of attention, memory, and learning may help us identify ways to support children’s later success in school and inform efforts to reduce inequities in educational attainment.
         </p>
 
-<br><br><br>
+        <br><br><br>
+
         <div class="webelieve-wrapper">
             <img src="assets/participate/webelieve.svg" width="700" height="700" alt="We Believe">
         </div>
 
         <h3>Land Acknowledgement</h3>
 
-<br>
+        <br>
 
-<p>
-The SPARK Lab recognizes that Oberlin College Campus is located on the ancestral homelands of Indigenous peoples, including moundbuilders, Erie, Wyandotte, Mingo, and numerous other confederated Indigenous Nations and Peoples. We acknowledge the history of displacement and dispossession, and its intergenerational effects on families, access to educational opportunities, and lived experiences. Our research seeks to better understand how children’s lived experiences and environments shape learning and development. 
-</p> 
+        <p>
+            The SPARK Lab recognizes that Oberlin College Campus is located on the ancestral homelands of Indigenous peoples, including moundbuilders, Erie, Wyandotte, Mingo, and numerous other confederated Indigenous Nations and Peoples. We acknowledge the history of displacement and dispossession, and its intergenerational effects on families, access to educational opportunities, and lived experiences. Our research seeks to better understand how children’s lived experiences and environments shape learning and development. 
+        </p> 
 
-        <p> Image courtesy of <a href= "https://www.sammykatta.com/pledge" target="_blank" rel="noopener noreferrer">  Sammy Katta </a> </p>
+        <p>Image courtesy of 
+            <a href="https://www.sammykatta.com/pledge" target="_blank" rel="noopener noreferrer">
+                Sammy Katta
+            </a>
+        </p>
 
     </div>
 
-    <!-- JavaScript include loader -->
+    <!-- Header loader -->
     <script>
         fetch("header.html")
             .then(response => response.text())
@@ -69,23 +74,27 @@ The SPARK Lab recognizes that Oberlin College Campus is located on the ancestral
             });
     </script>
 
+    <!-- Footer include -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("footer").innerHTML = html;
+            });
+    </script>
+
+    <!-- GTranslate -->
     <div class="gtranslate_wrapper"></div>
     <script>
-    window.gtranslateSettings = {
-        default_language: "en",
-        alt_flags: {"en":"usa"},
-        wrapper_selector: ".gtranslate_wrapper",
-        flag_style: "3d",
-    };
+        window.gtranslateSettings = {
+            default_language: "en",
+            alt_flags: {"en":"usa"},
+            wrapper_selector: ".gtranslate_wrapper",
+            flag_style: "3d",
+        };
     </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
-
- 
-<div id="sticky-footer">
-  <div class="wrap">
-<p>  Contact us! </p>
-<p>https://www.instagram.com/sparkchildlab/</p>
-  </div></div>
 </body>
 </html>

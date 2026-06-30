@@ -38,9 +38,6 @@
     </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
-
-</body>
-</html>
 <style> h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16, h17, h18, h19, h20 {
   font-size: 20px;
 } 
@@ -53,3 +50,17 @@
 <img src="assets/participate/Underconstruction.svg" class="center-image">
 </p>
 </style>
+
+<!-- Footer include -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("footer").innerHTML = html;
+            });
+    </script>
+
+
+</body>
+</html>
