@@ -462,8 +462,8 @@ body {
         height: 32px;
     }
 }
-/* Contact us email form */
-body {
+/* Contact us email form  (help)*/ 
+/* {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -533,4 +533,4 @@ textarea {
 
 .submit-button:hover {
     background-color: #218838;
-}
+} */
