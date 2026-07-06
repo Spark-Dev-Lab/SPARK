@@ -44,17 +44,6 @@
                 document.getElementById("header").innerHTML = html;
             });
     </script>
- 
-<!-- Footer include -->
-    <div id="footer"></div>
-    <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("footer").innerHTML = html;
-            });
-    </script>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
@@ -96,6 +85,16 @@
         </form>
     </div>
     <script src="scripts.js"></script>
+<!-- Footer include -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("footer").innerHTML = html;
+            });
+    </script>
+ 
 </body>
 
 
