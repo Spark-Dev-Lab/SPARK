@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-block:1em;
+  inline-size: min(90rem, 100% - 3em);
+  inline-size: calc-size(stretch, min(90rem, size - 3em));
+  margin-inline:auto;
+  gap:3em;
+}
+
+.large-box {
+  min-block-size: 20rem;
+  border:2px ;
+  background:hsl(200 100% 50% / .5);
+}
