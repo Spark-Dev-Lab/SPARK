@@ -7,6 +7,8 @@
   margin-inline:auto;
   gap:3em;
 }
+.textColor {
+        color: hsl(292, 46%, 15%);
 
 .large-box {
   min-block-size: 20rem;
