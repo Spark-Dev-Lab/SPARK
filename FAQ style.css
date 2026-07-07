@@ -10,6 +10,6 @@
 
 .large-box {
   min-block-size: 20rem;
-  border:2px ;
-  background:hsl(267.5 28.8 59.8/ .5);
+  border:2 ;
+  background:hsl(267.5 28.8% 59.8%/ .5);
 }
