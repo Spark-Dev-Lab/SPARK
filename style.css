@@ -409,6 +409,7 @@ body {
     padding: 30px 20px;
     margin-top: 60px;
     text-align: center;
+    text-decoration: none;
 }
 
 .footer-content {
@@ -432,6 +433,7 @@ body {
 
 .footer-socials a {
     margin: 0 10px;
+    display: inline-block;
 }
 
 .social-icon {
