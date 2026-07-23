@@ -292,7 +292,7 @@ body {
 
 .member-info {
     flex: 1;
-    min-width: 300px;
+    min-width: 500px;
 }
 
 .member-info h2 {
