@@ -1,1 +1,1 @@
-the domain is https://spark-dev-lab.github.io/SPARK/
+the domain is https://sparklab.oberlin.edu/
