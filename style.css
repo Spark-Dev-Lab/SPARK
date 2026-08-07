@@ -107,49 +107,56 @@ body {
 /* Content Area */
 .content {
     max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 16px auto 32px;
+    padding: 8px 20px 20px;
     text-align: center;
 }
 
-.content h1 {
+.content h1,
+.content h2,
+.content h3 {
+    margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.content > h1:first-child,
+.content > h2:first-child,
+.content > h3:first-child {
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
 .content p {
     color: #555;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .intro-line {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
     text-align: left;
-}
-
-.content p.home-quote {
-    text-align: right;
 }
 
 .content > .main-paragraph {
     max-width: 800px;
-    margin: 0 auto 32px;
+    margin: 0 auto 24px;
     text-align: center;
     display: block;
 }
 
-.text-with-right-image {
+.intro-with-image {
     overflow: auto;
-    margin: 0 0 36px 0;
-    max-width: 720px;
+    margin: 16px auto 28px;
+    max-width: 900px;
     display: block;
 }
 
-.text-with-right-image p {
-    margin: 1.2rem 0 0 0;
-    max-width: 420px;
-    text-align: right;
+.intro-with-image p {
+    margin: 0;
+    max-width: none;
+    text-align: left;
 }
 
 .float-right-image {
@@ -157,7 +164,7 @@ body {
     width: 260px;
     max-width: 40%;
     height: auto;
-    margin: 0 0 20px 20px;
+    margin: 0 0 12px 20px;
 }
 
 .feature-bar {
@@ -175,7 +182,7 @@ body {
     color: white;
     min-height: 8rem;
     padding: 1.5rem 20px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     text-align: center;
 }
 
@@ -263,13 +270,13 @@ body {
 
 .pub-note {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .pub-list {
     list-style-type: none;
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .pub-list li {
@@ -308,7 +315,7 @@ body {
     grid-template-columns: 1fr;
     gap: 0;
     align-items: start;
-    margin-top: 40px;
+    margin-top: 32px;
     text-align: center;
 }
 
@@ -480,12 +487,12 @@ body {
     }
 
     body {
-        margin: 0 0 100px;
+        margin: 0;
         position: relative;
     }
 
     main {
-        margin-bottom: 350px;
+        margin-bottom: 0;
     }
 
 }   /* ← THIS closes the mobile block */
@@ -498,8 +505,8 @@ body {
 .footer {
     background-color: #B24E50;
     color: white;
-    padding: 30px 20px;
-    margin-top: 60px;
+    padding: 24px 20px;
+    margin-top: 36px;
     text-align: center;
     text-decoration: none;
 }
@@ -539,7 +546,7 @@ body {
 }
 
 .footer-bottom {
-    margin-top: 25px;
+    margin-top: 16px;
     font-size: 0.9rem;
     opacity: 0.9;
 }
@@ -568,7 +575,7 @@ body {
     --faq-after: var(--brand-lavender);
     max-width: 1080px;
     margin: 0 auto;
-    padding: 48px 20px 32px;
+    padding: 36px 20px 24px;
 }
 
 .faq-page-title {
@@ -576,19 +583,19 @@ body {
     font-size: clamp(2.4rem, 4vw, 3.8rem);
     line-height: 1;
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
     color: #000;
 }
 
 .faq-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
 }
 
 .faq-section {
     border-radius: 28px;
-    padding: 28px;
+    padding: 24px;
     box-shadow: none;
 }
 
@@ -611,7 +618,7 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin: 0 0 18px;
-    text-align: left;
+    text-align: center;
     color: var(--brand-white);
 }
 
@@ -635,7 +642,7 @@ body {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
 }
 
 .faq-item summary::-webkit-details-marker {
