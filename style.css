@@ -19,6 +19,18 @@ body {
     background-color: white;
 }
 
+:root {
+    --brand-rose: #B24E50;
+    --brand-lavender: #A18CC1;
+    --brand-lilac: #E4DCE5;
+    --brand-gold: #F4D177;
+    --brand-plum: #483668;
+    --brand-plum-rgb: 72, 54, 104;
+    --brand-violet: #73348e;
+    --brand-violet-rgb: 115, 52, 142;
+    --brand-white: #fff;
+}
+
 /* Logo Constraints */
 .header-logo {
     max-width: 800px;   /* caps the size on large screens */
@@ -30,7 +42,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #B24E50;
+    background-color: var(--brand-rose);
     color: white;
     text-align: center;
     padding: 30px;
@@ -40,7 +52,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #A18CC1;
+    background-color: var(--brand-lavender);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +66,7 @@ body {
 
 /* Buttons */
 .dropbtn {
-    background-color: #A18CC1;
+    background-color: var(--brand-lavender);
     color: black;
     padding: 16px 24px;
     border: none;
@@ -63,14 +75,14 @@ body {
 }
 
 .dropbtn:hover {
-    background-color: #f4d177;
+    background-color: var(--brand-gold);
 }
 
 /* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e4dce5;
+    background-color: var(--brand-lilac);
     min-width: 180px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 1000;
@@ -84,7 +96,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #f4d177;
+    background-color: var(--brand-gold);
 }
 
 /* Show dropdown on hover */
@@ -462,6 +474,161 @@ body {
     .social-icon {
         width: 32px;
         height: 32px;
+    }
+}
+
+/* FAQ Page */
+.faq-page {
+    --faq-border: var(--brand-violet);
+    --faq-text: #000;
+    --faq-muted: #000;
+    --faq-card: var(--brand-rose);
+    --faq-before: var(--brand-lavender);
+    --faq-during: var(--brand-lavender);
+    --faq-after: var(--brand-lavender);
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px 20px 32px;
+}
+
+.faq-page-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #000;
+}
+
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.faq-section {
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: none;
+}
+
+.faq-section--before {
+    background: var(--faq-before);
+}
+
+.faq-section--during {
+    background: var(--faq-during);
+}
+
+.faq-section--after {
+    background: var(--faq-after);
+}
+
+.faq-section-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: clamp(1.5rem, 2.4vw, 2.05rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    text-align: left;
+    color: var(--brand-white);
+}
+
+.faq-item {
+    background: var(--faq-card);
+    border: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.faq-item:first-of-type {
+    margin-top: 0;
+}
+
+.faq-item summary {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 78px 20px 20px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::before {
+    content: "▼";
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-gold);
+    font-size: 0.9rem;
+    line-height: 1;
+    color: var(--brand-plum);
+}
+
+.faq-answer {
+    padding: 18px 20px 22px;
+    background: var(--brand-lilac);
+}
+
+.faq-answer p {
+    color: #000;
+    line-height: 1.65;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.faq-answer a {
+    color: var(--brand-violet);
+    font-weight: 700;
+}
+
+.faq-answer a:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .faq-page {
+        padding: 32px 14px 24px;
+    }
+
+    .faq-section {
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .faq-item {
+        border-radius: 20px;
+    }
+
+    .faq-item summary {
+        padding: 18px 68px 18px 18px;
+        font-size: 1.05rem;
+    }
+
+    .faq-item summary::before {
+        top: 13px;
+        right: 14px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .faq-answer {
+        padding: 16px 18px 20px;
     }
 }
 
