@@ -125,17 +125,31 @@ body {
 
 .intro-line {
     margin-top: 20px;
+    text-align: left;
+}
+
+.content p.home-quote {
+    text-align: right;
+}
+
+.content > .main-paragraph {
+    max-width: 800px;
+    margin: 0 auto 32px;
+    text-align: center;
+    display: block;
 }
 
 .text-with-right-image {
     overflow: auto;
-    margin: 0 0 36px 80px;
+    margin: 0 0 36px 0;
     max-width: 720px;
+    display: block;
 }
 
 .text-with-right-image p {
     margin: 1.2rem 0 0 0;
     max-width: 420px;
+    text-align: right;
 }
 
 .float-right-image {
@@ -179,7 +193,7 @@ body {
 .main-paragraph {
     max-width: 800px;
     margin: 0 auto 32px;
-    text-align: left;
+    text-align: center;
 }
 
 .webelieve-wrapper {
