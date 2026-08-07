@@ -288,27 +288,34 @@ body {
 /* Team Page */
 
 .team-member {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    --team-tight-gap: 2px;
+    --team-image-below-gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-items: start;
     margin-top: 40px;
-    text-align: left;
-    flex-wrap: wrap;
+    text-align: center;
+}
+
+.member-photo {
+    justify-self: center;
 }
 
 .member-photo img {
+    display: block;
     width: 550px;
     height: auto;
     border-radius: 10px;
 }
 
 .member-info {
-    flex: 1;
-    min-width: 300px;
+    display: contents;
 }
 
 .member-info h2 {
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .member-info span {
@@ -316,46 +323,105 @@ body {
     color: #666;
 }
 
-.position {
+.team-member p.position {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.degree {
-    margin-bottom: 8px;
+.team-member p.degree {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.links {
-    margin-bottom: 12px;
+.team-member p.links {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
 }
 
-.links a {
+.team-member p.links a {
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
 
-.links a:hover {
+.team-member p.links i {
+    line-height: 1;
+}
+
+.team-member p.links a:hover {
     text-decoration: underline;
 }
 
-.member-info p {
-    margin-bottom: 14px;
+.member-info p:not(.position):not(.degree):not(.links) {
+    margin-top: 0;
+    margin-bottom: 0;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+.member-info p:not(.position):not(.degree):not(.links):last-child {
+    margin-bottom: 0;
+}
+
+.member-info h2 + p.position,
+.member-info p.position + p.degree,
+.member-info p.degree + p.links,
+.member-info p.links + p:not(.position):not(.degree):not(.links),
+.member-info p:not(.position):not(.degree):not(.links) + p:not(.position):not(.degree):not(.links) {
+    margin-top: var(--team-tight-gap);
+}
+
+/* Keep metadata above the image, then place biography text below. */
+.member-info h2,
+.member-info .position,
+.member-info .degree,
+.member-info .links {
+    grid-column: 1;
+    text-align: center;
+}
+
+.member-photo {
+    grid-column: 1;
+    margin: var(--team-tight-gap) 0 var(--team-image-below-gap);
+}
+
+.member-info p:not(.position):not(.degree):not(.links) {
+    grid-column: 1;
+    max-width: 1000px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .team-member {
-        flex-direction: column;
-        align-items: center;
+        gap: 0;
         text-align: center;
     }
 
-    .member-info {
-        text-align: left;
+    .member-photo img {
+        width: min(550px, 100%);
     }
 
-    .member-photo img {
-        width: 250px;
+    .member-info {
+        display: contents;
+    }
+
+    .member-info h2,
+    .member-info .position,
+    .member-info .degree,
+    .member-info .links,
+    .member-info p:not(.position):not(.degree):not(.links) {
+        text-align: center;
+    }
+
+    .member-info p:not(.position):not(.degree):not(.links) {
+        text-align: center;
     }
 }
 
